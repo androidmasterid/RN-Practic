@@ -12,6 +12,7 @@ import {FontSize} from '../constants/FontSize';
 import {Tab1, Tab2} from '../constants/Icons';
 import {
   DashboardScreen,
+  DeeplinkingScreen,
   HOCExample,
   LoginOption,
   LoginScreen,
@@ -67,10 +68,14 @@ export const DashboardNavigation = ({navigation, route}) => {
         component={DashboardScreen}
         options={{headerShown: false}}
       />
-
       <DashboardStack.Screen
         name={AppScreens.HOCExample}
         component={HOCExample}
+        options={{headerShown: true}}
+      />
+      <DashboardStack.Screen
+        name={AppScreens.DeeplinkingScreen}
+        component={DeeplinkingScreen}
         options={{headerShown: true}}
       />
     </DashboardStack.Navigator>

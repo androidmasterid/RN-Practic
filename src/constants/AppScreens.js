@@ -13,4 +13,5 @@ export const AppScreens = {
 
   // DashboardScreen
   HOCExample: 'HOCExample',
+  DeeplinkingScreen: 'DeeplinkingScreen',
 };

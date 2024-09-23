@@ -15,8 +15,10 @@ const DashboardScreen = () => {
         <Text style={styles.btnText}>HOC Function</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.buttonBox}>
-        <Text style={styles.btnText}>Function</Text>
+      <TouchableOpacity
+        onPress={() => navigation.navigate(AppScreens.DeeplinkingScreen)}
+        style={styles.buttonBox}>
+        <Text style={styles.btnText}>Deep Linking</Text>
       </TouchableOpacity>
     </View>
   );
