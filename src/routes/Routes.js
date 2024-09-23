@@ -71,7 +71,7 @@ export const DashboardNavigation = ({navigation, route}) => {
       <DashboardStack.Screen
         name={AppScreens.HOCExample}
         component={HOCExample}
-        options={{headerShown: false}}
+        options={{headerShown: true}}
       />
     </DashboardStack.Navigator>
   );
