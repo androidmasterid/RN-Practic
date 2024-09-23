@@ -12,6 +12,7 @@ import {FontSize} from '../constants/FontSize';
 import {Tab1, Tab2} from '../constants/Icons';
 import {
   DashboardScreen,
+  HOCExample,
   LoginOption,
   LoginScreen,
   ProfileScreen,
@@ -64,6 +65,12 @@ export const DashboardNavigation = ({navigation, route}) => {
       <DashboardStack.Screen
         name={AppScreens.DashboardScreen}
         component={DashboardScreen}
+        options={{headerShown: false}}
+      />
+
+      <DashboardStack.Screen
+        name={AppScreens.HOCExample}
+        component={HOCExample}
         options={{headerShown: false}}
       />
     </DashboardStack.Navigator>
@@ -140,7 +147,7 @@ export const CombineNavigation = () => {
   return (
     <CombineStack.Navigator
       screenOptions={{headerShown: false}}
-      initialRouteName={AppScreens.AuthStack}>
+      initialRouteName={AppScreens.TabStack}>
       <CombineStack.Screen
         name={AppScreens.AuthStack}
         component={AuthStackNavigation}

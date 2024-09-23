@@ -10,4 +10,7 @@ export const AppScreens = {
   TabStack: 'TabStack',
   Home: 'Home',
   Profile: 'Profile',
+
+  // DashboardScreen
+  HOCExample: 'HOCExample',
 };

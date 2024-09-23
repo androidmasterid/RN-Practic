@@ -2,6 +2,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import {StatusBar} from 'react-native';
 import 'react-native-gesture-handler';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {enableFreeze} from 'react-native-screens';
 import {Provider} from 'react-redux';
 import {store} from './src/redux/Store';
@@ -17,7 +18,9 @@ const App = () => {
           backgroundColor="transparent"
           barStyle={'dark-content'}
         />
-        <CombineNavigation />
+        <GestureHandlerRootView>
+          <CombineNavigation />
+        </GestureHandlerRootView>
         {/* <CheckInternet /> */}
       </NavigationContainer>
     </Provider>
